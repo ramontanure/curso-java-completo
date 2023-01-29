@@ -23,13 +23,4 @@ public class SavingsAccount extends Account {
 	public void updateBalance() {
 		balance += balance * interestRate;
 	}
-	
-	//Sobreposição de metodo, indica que estou implementando um metodo da superclasse na subclasse
-	//override Indica que é uma sobreposição de metodo
-	//Override ele procura na superclasse e se não encontra acontece um erro
-	@Override
-	public void withdraw(double amount) {
-		balance -= amount;
-	}
-	
 }
